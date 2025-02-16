@@ -8,13 +8,13 @@ public class CoolPlugin extends JavaPlugin {
     @Override
     public void onEnable() {
     getServer().getPluginManager().registerEvents(new MessageEvent(), this);
-    getServer().getConsoleSender().sendMessage(ChatColor.GOLD + "[CoolPlugin]This Plugin is now enabled!");
+    getServer().getConsoleSender().sendMessage(ChatColor.GOLD + "[AntiSwearList] Antiswear Word List enabled!");
     }
 
     
     @Override
     public void onDisable() {
-        getServer().getConsoleSender().sendMessage(ChatColor.GOLD + "[CoolPlugin]This Plugin is now disabled");
+        getServer().getConsoleSender().sendMessage(ChatColor.GOLD + "[AntiSwearList] Plugin shut down successfully");
 
     }
 }
